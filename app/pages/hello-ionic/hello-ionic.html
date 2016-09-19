@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hello Ionic</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="getting-started">
+
+  <h3>Welcome to your first Ionic app!</h3>
+
+  <p>
+    This starter project is our way of helping you get a functional app running in record time.
+  </p>
+  <p>
+    Follow along on the tutorial section of the Ionic docs!
+  </p>
+  <p>
+    <button primary menuToggle>Toggle Menu</button>
+  </p>
+
+  <ion-card>
+    <ion-card-content>
+      Hello World, this is my camera app
+
+      <button (click)="takePicture()">Take a Picture</button> Latest Picture:
+      <hr />
+      <img [src]="base64Image" width="400px" height="300px" />
+      <hr />
+      <span>
+        <ion-input type="text" value="{{base64Image}}"></ion-input>
+          
+      </span>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
